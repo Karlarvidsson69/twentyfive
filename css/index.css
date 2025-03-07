@@ -1,30 +1,124 @@
 .container {
     display: grid ;
-    grid-template-rows: 10vh, 40;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh 20vh 10vh 10vh 10vh;
+    grid-template-columns: 30% 70%;
     grid-template-areas:
     "header header"
     "sec0 sec0"
-    "sec1 sec3"
-    "sec2 sec4"
+    "sec1 sec1"
+    "sec2 sec2"
     "sec5 sec5";
-    height:60vh;
+    height:10vh 10vh 10vh 10vh;
+    
+}
+
+
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: green;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+
+
+@media screen and (max-width: 500px){
     
 }
 
 header {
-    grid-area:header;
-    text-align: center;
+    text-align: left;
     color: rgb(6, 197, 44);
     font-family: "Lucida Console"
 }
 
-@media screen {
-    
-}
-
-sec0 {
+section.sec0 {
     grid-area:sec0;
     text-align: center;
     color: rgb(6, 197, 44);
+}
+
+img{
+    width: 50vh;
+    border-radius: 20px; 
+}
+
+
+section.sec1 {
+    grid-area: sec1;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+
+section.sec2 {
+    grid-area: sec2;
+}
+
+
+
+body,ul{
+    margin: 0;
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: rgb(6, 197, 44) ;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+@media screen and (max-width: 500px){
+
+}
+    
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
 }
