@@ -1,0 +1,96 @@
+.container {
+    display: grid ;
+    grid-template-rows: 5vh 10vh 67vh 12vh 60vh 10vh;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "header header"
+    "sec0 sec0"
+    "sec1 sec1"
+    "sec2 sec2"
+    "sec3 sec3"
+    "sec4 sec4";
+    height:80vh ;
+    
+}
+
+
+
+
+.menu{
+    height: 100vh;
+    width: 70vh;
+    background: green;
+    position: fixed;
+    top: 0;
+    left: -95vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+section.sec0 {
+    grid-area:sec0;
+    text-align: center;
+    color: rgb(6, 197, 44);
+    font-family: "Lucida Console"
+    
+}
+
+section.sec1 {
+    grid-area:sec1;
+    text-align: center;
+    color: rgb(6, 197, 44);
+}
+
+section.sec2{
+    grid-area: sec2;
+    text-align: center;
+    color: rgb(6, 197, 44);
+    font-size: x-large;
+}
+
+section.sec3{
+    grid-area: sec3;
+    color: rgb(6, 197, 44);
+    font-size: large;
+}
+
+li{
+    margin-bottom: 25px;  
+}
+
+
+img{
+    width: 400px;
+    height: 375px;
+    border-radius: 20px;
+}
+
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
