@@ -41,12 +41,28 @@
     left: 0;
 }
 
+li{
+    margin-bottom: 25px;  
+}
+
 section.sec0 {
     grid-area:sec0;
+    font-family: "Lucida Console"
+    background-image url("/img/skog.jpg");
     text-align: center;
     color: rgb(6, 197, 44);
-    font-family: "Lucida Console"
+
+  
 }
+
+section.sec1 {
+    grid-area:sec1;
+    background-image url("/img/skog.jpg");
+}
+
+
+
+
 
 
 .fade-layer{

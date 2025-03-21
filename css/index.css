@@ -63,6 +63,10 @@ section.sec0 {
     
 }
 
+li{
+    margin-bottom: 25px;  
+}
+
 section.sec1 {
     grid-area:sec1;
     text-align: center;
