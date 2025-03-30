@@ -1,6 +1,6 @@
 .container {
     display: grid ;
-    grid-template-rows: 5vh 10vh 20vh 22vh 50vh 20vh 50vh;
+    grid-template-rows: 5vh 10vh 25vh 22vh 50vh 20vh 50vh;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "header header"
@@ -15,12 +15,16 @@
 }
 
 
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
 
 
 .menu{
     height: 100vh;
     width: 70vh;
-    background: green;
+    background: #000a62;
     position: fixed;
     top: 0;
     left: -95vw;
@@ -42,16 +46,33 @@
     left: 0;
 }
 
+@media screen and (min-width: 700px){
+    .container {
+        display: grid ;
+        grid-template-rows: 5vh 15vh 15vh 25vh 20vh 50vh;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "header header"
+        "sec0 sec0"
+        "sec1 sec1"
+        "sec2 sec4"
+        "sec3 sec5";
+        height:80vh ;
+        
+    }
+}
+
+
 section.sec0 {
     grid-area:sec0;
     text-align: center;
-    color: rgb(6, 197, 44);
+    color: #172EFF;
     font-family: "Lucida Console"
 }
 
 section.sec1{
     grid-area: sec1;
-    color: rgb(6, 197, 44);
+    color: #172EFF;
     text-align: center;
 }
 
@@ -60,15 +81,17 @@ li{
 }
 
 img{
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     aspect-ratio: 1/1;
     border-radius: 10px; 
+    object-fit: cover;
+    border:#000a62 solid 2px;
 }
 
 section.sec2{
     grid-area: sec2;
-    color:rgb(6, 197, 44) ;
+    color:#172EFF ;
     text-align: center;
 
 }
@@ -80,7 +103,7 @@ section.sec3{
 
 section.sec4{
     grid-area: sec4;
-    color:rgb(6, 197, 44) ;
+    color:#172EFF ;
     text-align: center;
 }
 
